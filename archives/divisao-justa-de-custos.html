@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rômulo Martins Damásio de Sousa">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renda Justa</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div id="cabeçalho">
+        <h1>Divisão justa de custos</h1>
+        <p>Reparta uma despesa de maneira justa entre um grupo ou familia de acordo com o salãrio de cada pessoa.</p>       
+    </div>
+    
+    <div id="conteudo">
+
+        <div class="conteudochild" id="caixadeinputs">
+            <h2>Quantas pessoas pagarão a despesa?</h2>
+            <p>nº de pessoas:</p>
+            <input type="number" id="numeroDePessoas" placeholder="nº de pessoas"> <br>
+            <input class="botao" type="button" value="Liberar Campos" onclick="mostrarNumeroDePessoas()">
+            <div id="container"></div>
+        </div>
+
+        <div class="conteudochild" id="resultado"><h2>Resultado:</h2></div>
+
+    </div>
+
+
+    <div id="instruções">
+        <h2 onclick="mostrarOcultar()">Dúvidas?</h2>
+        
+        <div class="ocult" id="instruçõescontainer">
+            <p>Esta página tem a finalidade de facilitar a divisão de uma despesa de maneira justa para cada membro de um grupo.</p>
+            <p>Ex: Três pessoas com salários diferentes moram na mesma residência e querem dividir as contas do mês, se dividirem as parcelas em três partes iguais, não é justo para quem tem um salário menor, certo?</p>
+        
+            <table>
+                <tr>
+                    <td>Pessoa</td> <td>Salário</td> <td>Dívida</td> <td>Quanto cada um deve pagar?</td>
+                </tr>
+                <tr>
+                    <td>Rebeca</td> <td>R$1350</td> <td rowspan="3">R$930</td> <td>R$310 <div class="float">&#X274C</div></td>
+                </tr>
+                <tr>
+                    <td>Pedro</td> <td>R$2340</td> <td>R$310 <div class="float">&#X274C</div></td>
+                </tr>
+                <tr>
+                    <td>Jessica</td> <td>R$2955</td> <td>R$310 <div class="float">&#X274C</div></td>
+                </tr>
+            </table>
+            <p>Portanto, a maneira correta é dividir por porcentagem baseada em cada salário e não por parcelas iguais.&#128522  &#x1F447</p>
+            <table>
+                <tr>
+                    <td>Pessoa</td> <td>Salário</td> <td>Dívida</td> <td>Quanto cada um deve pagar?</td>
+                </tr>
+                <tr>
+                    <td>Rebeca</td> <td>R$1350</td> <td rowspan="3">R$930</td> <td>R$63.04 <div class="float">&#x2705</div></td>
+                </tr>
+                <tr>
+                    <td>Pedro</td> <td>R$2340</td> <td>R$109.28 <div class="float">&#x2705</div></td>
+                </tr>
+                <tr>
+                    <td>Jessica</td> <td>R$2955</td> <td>R$138.00 <div class="float">&#x2705</div></td>
+                </tr>
+            </table>
+            <p>Mas não se preocupe em quebrar a cabeça com cálculos, preencha os campos necessários e este sistema calculará para você!!!</p>
+        </div>
+    </div>
+
+    <div id="creditos">
+        <table>
+
+            <div>
+                <h1>Criado por:</h1>
+                <p>Rômulo Martins</p>
+            </div>
+
+            <div>
+                <h1>instagram: </h1>
+                <p><a href="https://www.instagram.com/romulo_martins18/">https://www.instagram.com/romulo_martins18/</a></p>
+            </div>
+            <div>
+                <h1>E-mail: </h1>
+                <p id="email">romulodev08@gmail.com</p>
+            </div>
+
+            <div>
+                <h1>GitHub: </h1>
+                <p><a href="https://github.com/romulodev08" target="_blank">https://github.com/romulodev08</a></p>
+            </div>
+
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
