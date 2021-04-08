@@ -78,7 +78,7 @@ function calcResult(){
 }
 //organiza o resultado dentro de tags HTML
 function prepareResult(x) {
-    result += `<p>Montante: R$${montante}</p> <p>Para pagar a dívida, cada pessoa ultilizará R$${porcentagem}% de sua renda individual.</p>`
+    result += `<p>Montante: R$${montante}</p> <p>Para pagar a dívida, cada pessoa ultilizará ${porcentagem}% de sua renda individual.</p>`
     for(let i = 0; i < x;i++){
         result += `<p>A ${i+1}ª pessoa ultilizará R$${cadaumPaga[i]} de sua renda.</p>`
     }
